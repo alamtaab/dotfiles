@@ -1,0 +1,4 @@
+.config/micro/backups/**
+.config/micro/buffers/**
+.config/kew/library.dat
+.config/kew/themes/**
