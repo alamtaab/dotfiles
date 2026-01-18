@@ -2,11 +2,12 @@
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: FontAwesome, 'IBM Plex Sans', Helvetica, Arial, sans-serif;
     font-size: 13px;
+    color: orange;
 }
 
 window#waybar {
     background-color: rgba(0,0,0,1);
-    border-bottom: 2px solid rgba(255, 255, 255, 1);
+    border-bottom: 2px solid orange;
     color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
@@ -57,7 +58,6 @@ button:hover {
 #workspaces button {
     padding: 0 5px;
     background-color: transparent;
-    color: #ffffff;
 }
 
 #workspaces button:hover {
@@ -96,7 +96,6 @@ button:hover {
 #power-profiles-daemon,
 #mpd {
     padding: 0 10px;
-    color: #ffffff;
 }
 
 #window,
@@ -119,8 +118,7 @@ button:hover {
 }
 
 #battery {
-    background-color: #ffffff;
-    color: #000000;
+    /* background-color: black; */
 }
 
 #battery.charging, #battery.plugged {
@@ -169,34 +167,12 @@ label:focus {
     background-color: #000000;
 }
 
-#cpu {
-    background-color: #2ecc71;
-    color: #000000;
-}
-
-#memory {
-    background-color: #9b59b6;
-}
-
-#disk {
-    background-color: #964B00;
-}
-
 #backlight {
     background-color: #90b1b1;
 }
 
-#network {
-    /* background-color: #2980b9; */
-}
-
 #network.disconnected {
     background-color: #f53c3c;
-}
-
-#pulseaudio {
-    /* background-color: #f1c40f; */
-    /* color: white; */
 }
 
 #pulseaudio.muted {
@@ -225,14 +201,6 @@ label:focus {
 
 #custom-media.custom-vlc {
     background-color: #ffa000;
-}
-
-#temperature {
-    background-color: #f0932b;
-}
-
-#temperature.critical {
-    background-color: #eb4d4b;
 }
 
 #tray {
