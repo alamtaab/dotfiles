@@ -1,66 +1,88 @@
 {
-  // "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
-  "logo": {
-    "color": {
-      "1": "blue",
-      "2": "blue",
-    },
-  },
-  "display": {
-  	"color": {
-  		"title": "blue",
-  		"keys": "blue",
-  	},
-  	"size": {
-  		"ndigits": 1
-  	},
-  },
-  
-  "modules": [
-    "title",
-    "separator",
-    {
-    	"type": "os",
-    	"key": "OS",
-    	"format": "{name}"
-    },
-    // "kernel",
-    "uptime",
-    {
-    	"type": "packages",
-    	"key": "Packages",
-    	"format": "{all}"
-    },
-    "de",
-    {
-    	"type": "wm",
-    	"key": "wm",
-    	"format": "{process-name}"
-    },
-    "terminal",
-    {
-    	"type": "cpu",
-    	"key": "CPU",
-    	"format": "{name} @ {freq-max}"
-    },
-    {
-    	"type": "gpu",
-    	"key": "GPU",
-    	"format": "{vendor} {name}"
-    },
-    {
-    	"type": "memory",
-    	"key": "Memory",
-    	"format": "{used} / {total}"
-    },
-    {
-    	"type": "disk",
-    	"key": "Disk",
-    	"format": "{size-used} / {size-total} - {filesystem}"
-    },
-    "battery",
-    "poweradapter",
-    "break",
-    "colors"
-  ]
+	"$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+	"logo": {
+		"color": {
+			"1": "white",
+			"2": "white"
+		}
+	},
+	"display": {
+		"separator": " ",
+		"color": "white"
+	},
+	"modules": [
+		{
+			"type": "custom",
+			"key": "HARDWARE",  //{#}{#36}\uE0B0",
+		},
+		// {
+		// 	"type": "board",
+		// 	"key": "├─ MTB ",
+		// 	"keyColor": "red"
+		// },
+		{
+			"type": "cpu",
+			"key": "├─ CPU ",
+			"format": "{name} @ {freq-max}",
+		},
+		{
+			"type": "gpu",
+			"key": "├─ GPU ",
+			"format": "{vendor} {name}",
+		},
+		{
+			"type": "memory",
+			"key": "└─ RAM ",
+			"format": "{used} / {total}",
+		},
+		// {
+		// 	"type": "display",
+		// 	"key": "└─ RES ",
+		// 	"keyColor": "red",
+		// 	"compactType": "original"
+		// },
+		"break",
+		{
+			"type": "custom",
+			"key": "SOFTWARE",  //{#}{#36}\uE0B0",
+		},
+		{
+			"type": "os",
+			"key": "├─ OS  ",
+			"format": "{name}",
+		},
+		// {
+		// 	"type": "kernel",
+		// 	"key": "├─ KER ",
+		// 	"keyColor": "blue"
+		// },
+		{
+			"type": "wm",
+			"key": "├─ WM  ",
+			"format": "{process-name}",
+		},
+		{
+			"type": "shell",
+			"key": "├─ SH  ",
+		},
+		{
+			"type": "terminal",
+			"key": "├─ TRM ",
+		},
+		{
+			"type": "PACKAGES",
+			"key": "└─ PKG ",
+			"format": "{all}",
+		},
+		// {
+		// 	"type": "uptime",
+		// 	"key": "└─ UPT ",
+		// },
+		"break",
+		{
+			"type": "colors",
+			"symbol": "squares",
+			"paddingLeft": 8
+		}
+	]
 }

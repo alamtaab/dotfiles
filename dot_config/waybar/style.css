@@ -5,8 +5,8 @@
 }
 
 window#waybar {
-    background-color: rgba(17, 17, 17, 0.7);
-    border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+    background-color: rgba(0,0,0,1);
+    border-bottom: 2px solid rgba(255, 255, 255, 1);
     color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
@@ -50,7 +50,8 @@ button:hover {
 
 /* you can set a style on hover for any module like this */
 #pulseaudio:hover {
-    background-color: #a37800;
+    background-color: white;
+    color: black
 }
 
 #workspaces button {
@@ -114,7 +115,7 @@ button:hover {
 }
 
 #clock {
-    background-color: #64727D;
+    /* background-color: #64727D; */
 }
 
 #battery {
@@ -186,7 +187,7 @@ label:focus {
 }
 
 #network {
-    background-color: #2980b9;
+    /* background-color: #2980b9; */
 }
 
 #network.disconnected {
@@ -194,8 +195,8 @@ label:focus {
 }
 
 #pulseaudio {
-    background-color: #f1c40f;
-    color: #000000;
+    /* background-color: #f1c40f; */
+    /* color: white; */
 }
 
 #pulseaudio.muted {
@@ -235,7 +236,7 @@ label:focus {
 }
 
 #tray {
-    background-color: #2980b9;
+    /* background-color: #2980b9; */
 }
 
 #tray > .passive {
@@ -248,7 +249,7 @@ label:focus {
 }
 
 #idle_inhibitor {
-    background-color: #2d3436;
+    /* background-color: #2d3436; */
 }
 
 #idle_inhibitor.activated {
