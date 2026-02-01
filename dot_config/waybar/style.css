@@ -2,13 +2,13 @@
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: FontAwesome, 'IBM Plex Sans', Helvetica, Arial, sans-serif;
     font-size: 13px;
-    color: orange;
+    color: white;
 }
 
 window#waybar {
-    background-color: rgba(0,0,0,1);
-    border-bottom: 2px solid orange;
-    color: #ffffff;
+    background-color: rgba(0,0,0,0.5);
+    border-bottom: 2px solid white;
+    color: #000000;
     transition-property: background-color;
     transition-duration: .5s;
 }

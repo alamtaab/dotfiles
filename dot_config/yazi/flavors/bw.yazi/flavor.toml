@@ -18,7 +18,7 @@ symlink_target = { italic = true }
 marker_copied   = { fg = "green",  bg = "green" }
 marker_cut      = { fg = "yellow", bg = "yellow" }
 marker_marked   = { fg = "magenta", bg = "magenta" }
-marker_selected = { fg = "white", bg = "white" }
+marker_selected = { fg = "black", bg = "white" }
 
 # Count
 count_copied   = { fg = "green", bg = "lightgreen" }
@@ -34,7 +34,7 @@ syntect_theme = "/dev/null"
 
 [indicator]
 preview = { fg = "black", bg = "white" }
-parent =  { fg = "white", bg = "white" }
+parent =  { fg = "black", bg = "white" }
 current = { fg = "black", bg = "white" }
 padding = { open = "", close = "" }
 
